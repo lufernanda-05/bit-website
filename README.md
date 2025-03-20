@@ -5,6 +5,6 @@
 
 ---
 >AUTOR:
-
+![logo](foto.jpg)
 
 ~~Luisa Fernanda Bernal~~
