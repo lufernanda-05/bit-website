@@ -30,7 +30,7 @@ PARA HACER CON UN ESPACIO  que quede con una raya senpone >:
 >> Hi
 ---
 poner una foto 
-![foto](foto.jpg)
+![foto](log.png)
 ---
 dirigir a una pagina por link:
 [Link to BIT](https://bitinstitute.co/)
