@@ -1,0 +1,6 @@
+/*fondo para la 1 pagina creada*/
+body {
+    /*color degradado*/
+    background: linear-gradient(40deg, rgb(210, 74, 201) 48%, rgba(242,242,242,1) 100%);
+
+}

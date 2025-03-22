@@ -1,0 +1,42 @@
+/*hacer comentarios*/
+body {
+    /*color de fondo*/
+background-color: rgba(55, 205, 235, 0.836);
+}
+/*uso de selector de etiqueta*/
+header {
+    background-color: pink;/*color de fondo a ese parte de encabezado*/
+    border: solid black;
+    /* ancho */
+    width: 110%;
+    /* alto */
+    height: 50px;
+
+    /* color al texto */
+    color: rgb(214, 104, 14);
+}
+
+li{/*color a las listas*/
+    /*color de letra:*/
+    color: rgb(53, 40, 231);
+}
+
+/* SELECTOR DE CLASE -> . */
+.contenedor{
+    /* bordes o recuadro:*/
+    border: solid rgb(171, 14, 14);
+}
+
+/* SELECTOR ID =uno expecifico importante-> # */
+#list-unic{
+    background-color: rgb(232, 187, 187);
+    /* ancho */
+    width: 110%;
+    /* alto */
+    height: 50px;
+    /* tamaÃ±o de letra */
+    font-size: 40px;
+}
+section{
+    color: rgb(140, 6, 115);
+}

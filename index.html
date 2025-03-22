@@ -1,0 +1,101 @@
+<!--COMENTARIOS-->
+<!DOCTYPE html><!--una etiqueta donde vamos a escribir -->
+<html lang="es"><!--etiqueta raiz que es EL IDIOMA en que va la pagina-->
+<head><!--metadata=informacion hacerca de los datos-->
+    <meta charset="UTF-8"><!--caracteres-->
+    <!--EL VIEWPORT= es el area del navegador si es pequeño grande o mediano-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi pagina</title><!--NOMBRE DE LA PAGINA COMO VA APARECER-->
+    <!--color de fondo para la pagina se arrasta desde otra pagina-->
+    <link rel="stylesheet" href="./styles/fondos.css">
+    <!--logo de la pagina= -->
+    <link rel="shortcut icon" href="./assets/portada.png" type="image/x-icon">
+</head>
+<body>
+    <header id="top"><!--EL ID es un atributo unico -->
+        <H1>LUISA FERNANDA BERNAL</H1><!--titulo principal-->
+    </header><!--etiqueta semantica-->
+    <img src="./assets/foto.jpg" alt="mi foto">
+      <hr /><!--se dibuja una linea horizontal-->
+      <nav>
+        <h2>REDES SOCIALES DE CONTACTO</h2>
+       <!--redirecciones=<!--href que es la ruta del archivo= <A HREF ENTER Y LUEGO PONE > Y YA SE COMPLETA-->
+       <!--el numeral=#=para que no se vaya a ningun lado pero esta en el link-->
+       <a href="#">no redireccionar a ningun sitio</a>
+       <br /><!--salto de linea-->
+        <a href="https://www.facebook.com/">facebook</a>
+        <br />
+        <a href="https://www.instagram.com/">instagram</a>
+      </nav><!--etiqueta semantica-->
+      <hr/>
+      <main><!--etiqueta semantica-->
+      <section><!--para pone parrafos, subtitulos,-->
+        <h2>Mi perfil</h2><!--subtitulo-->
+        <p><!--parrafos-->
+            My name is Luisa Fernanda Bernal Gordillo I am 19 years old, a systems engineering student,
+            and I am studying English. I am passionate about what I do, extroverted, companionable,
+             and dedicated to my things .
+             I LOVE THE CATS AND THE PINK COLOR.
+        </p>
+      </section>
+      <section>
+        <h2>My hobbies</h2><!--subtitulo-->
+        <p><!--parrafos-->
+            Me gusta ir al gym salir en familia , aprobecho mis espacios personales para tener tiempo conmigo misma 
+            escuchar musica y ver series.
+        </p>
+      </section> 
+        <section>
+            <h3>MY FAMILY</h3>
+            <p>
+                En mi falilia somos 4 mis padres mi hermano y yo, somos una familia unida , alegra y de un ambiente genial ,
+                nuestros planes soy el baile  y viajar a conocer partes diversas que nos rodean .
+            </p>
+            <!--textos falsos para cuansdo no se sabe todavia que escribir pero dejar el espacio = -->
+    <!--SIEMPRE SE PONEN LOREM y si quiere largo se MULTIPLICA= LOREM *5 -->
+    <!--SI ES SOLO CORTO SE PONE LOREM NADA MAS-->
+    <!--EL OTRO ES LOREM Y UN NUMERO QUE INDICA LA CANTIDAD DE PALABRAS -->
+    <p>
+        Lorem, ipsum dolor.<!--utilizando 3 palabras=LOREM3-->
+    </p>
+     </section>
+     <section>
+        <h3>MY FAVORITE FOOD </h3>
+        <p>PASTA A LA BOLOÑESA </p>
+        <img src="./assets/pas.jpg" alt="PASTA">
+         <!--listas desordenadas = ul: muestra sin numeracion sino algun icono-->
+       <ul>
+       <h4>INGREDIENTES:</h4>
+        <li>leche</li>
+       <li>cebolla</li>
+       <li>tomates</li>
+       <li>carne molida</li>
+       </ul>
+        <!--listas ordenadas : mustran con numeracion -->
+       <ol>
+        <h5>PREPARACION:</h5>
+        <li>se pone a hervir el agua para hablandar la pasta</li>
+        <li>se prepara el riogo con los ingredientes y sabores algusto</li>
+        <li>se sirve y agrega toque de cilantro para disfrutar</li>
+       </ol>
+    </section>
+    </main>
+    <!--el ASIDE es contienido secundario-->
+    <aside>
+        <!--para pegar links externos y se habra en otra pestaña:-->
+        <a href="https://github.com/lufernanda-05" 
+        target="_blank" 
+        rel="noopener noreferrer">GITHUB</a><!--nombre de la pagina-->
+    </aside>
+    <!--pie de pagina-->
+    <footer id="botton"><!--BOTON PARA SUBIR DE ABAJO AL PRINCIPIO-->
+        <p> contect footer</p>
+        <p> <a href="#top">Top</a></p>
+    </footer>
+    <!--etiquetas genericas: no relevante y si no quiere que se EJECUTE O MUESTRE SE PONE COMO COMENTARIO:-->
+    <div></div><!--ES TIPO BLOQUE-->
+    <span> </span><!--tipo en linea-->
+     <!--los botones para la apariencia de espichar o dar formularios= <BUTTON> y en la mitad la palabra que queremos que diga ese boton-->
+        <button>da click aqui </button>
+</body>
+</html>

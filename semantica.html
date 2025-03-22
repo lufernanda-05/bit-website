@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es"><!--IDIOMA ES= EN ESPAÑOL--->
+<head>
+    <meta charset="UTF-8"> <!--caracteres--> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNDAMENTOS DE CSS</title>
+    <!--vinculacion de diferentes archivos-->
+    <!--se pone LINK rel="stylesheet" href= styles y el link del archivo-->
+    <!--poner ./ sirve para poner un archivo en la linea-->
+    <!--el ../ =salir de una caropeta y el ./ para entrar a una carpeta-->
+    <link rel="stylesheet" href="./styles/semantica.css">
+    <!--poner logo en la pagina =<link rel="shortcut icon" href= "./carpeta donde esta 
+    el archivo /nombre del archivo"-->
+    <link rel="shortcut icon" href="./assets/log.png" type ="image/x-icon">
+</head>
+<body>
+<!-- ESTRUCTURA SEMANTICA: -->
+
+    <!-- encabezado= -->
+    <header>
+        <h1>Fundamentos CSS</h1><!--TITULO PRINCIPAL-->
+     </header>
+
+    <!-- contenido -->
+     <main>
+        <!-- sección de contenido -->
+        <section class="contenedor">
+            <h2>que es CSS?:</h2>
+            <p>Es el lenguaje utilizado para describir la presentación de un documento HTML. A través de CSS, se definen los estilos visuales de los elementos en la página web, como colores, fuentes, márgenes, tamaños y posiciones. Además, permite adaptaciones a diferentes tamaños de pantalla.</p>
+        </section>
+
+        <section >
+            <h2>Selectores de CSS</h2>
+            <ol><!--en una lista ordenada-->
+                <!--acceder a las clase se pone dentro de las listas ordenadas en el <li class ="list-item">-->
+                <li>Etiquetas: menos específicas</li>
+                <li class="list-item">Clases: recomendadas para CSS - especificidad:intermedia</li>
+                <li id="list-unic">Identificadores únicos: más específico</li>
+            </ol>
+        </section>
+     </main>
+
+    <!-- pie de página -->
+     <footer>
+        <p>Creado por Lu fernanda BERNAL</p>
+        <ul>
+            <li>instagram</li>
+            <li>whatsap</li>
+            <li>facebook</li>
+        </ul>
+     </footer>
+
+
+    <!-- Notas*
+        camelCase -> inicia la palabra en minúscula, y la siguiente palabra inicia con mayúscula 
+        - Variables
+        - selectores
+        - nombres archivos, imagenes, carpetas, etc
+    -->
+</body>
+</html>
