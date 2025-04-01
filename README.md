@@ -8,9 +8,9 @@ van hasta el 6
 #### HEADING 4
 ##### HEADING 5
 ###### HEADING 6
----
+-----------------------------------------------------------------------
 PARAGRAPH= parafos
----
+---------------------------------------------------------------------
 para resalta una palabra se pone  dos asteriscos al principio y al final o 2 raytas al piso:
 I´m **learning**mardown
 para que de un espacio entre lineas se da espacio o se pone 2 puntos seguidos=(hola..)
@@ -22,19 +22,19 @@ i´m *learnig*
 PARA RAYAR LA LETRA A LA MITAD va ~~ antes y despues: 
 i´m ~~learnig~~
 I'm _learning_ markdown
----
+--------------------------------------------------------------------
 
 Hello
 PARA HACER CON UN ESPACIO  que quede con una raya senpone >:
 > Hola
 >> Hi
----
+----------------------------------------
 poner una foto 
 ![foto](log.png)
----
+-----------------------------------------
 dirigir a una pagina por link:
 [Link to BIT](https://bitinstitute.co/)
----
+--------------------------------------------
 LISTAS ORDENADAS:
 1. HTML
 2. CSS

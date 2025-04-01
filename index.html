@@ -12,12 +12,14 @@
     <link rel="shortcut icon" href="./assets/portada.png" type="image/x-icon">
 </head>
 <body>
+  <!--para agregar 3 veces un h1 h2 y h3 una forma abreviada h${hello.$}*3 -->
     <header id="top"><!--EL ID es un atributo unico -->
         <H1>LUISA FERNANDA BERNAL</H1><!--titulo principal-->
     </header><!--etiqueta semantica-->
     <img src="./assets/foto.jpg" alt="mi foto">
       <hr /><!--se dibuja una linea horizontal-->
       <nav>
+        
         <h2>REDES SOCIALES DE CONTACTO</h2>
        <!--redirecciones=<!--href que es la ruta del archivo= <A HREF ENTER Y LUEGO PONE > Y YA SE COMPLETA-->
        <!--el numeral=#=para que no se vaya a ningun lado pero esta en el link-->
@@ -29,7 +31,8 @@
       </nav><!--etiqueta semantica-->
       <hr/>
       <main><!--etiqueta semantica-->
-      <section><!--para pone parrafos, subtitulos,-->
+
+      <section><!--para poner parrafos, subtitulos,-->
         <h2>Mi perfil</h2><!--subtitulo-->
         <p><!--parrafos-->
             My name is Luisa Fernanda Bernal Gordillo I am 19 years old, a systems engineering student,
@@ -37,7 +40,27 @@
              and dedicated to my things .
              I LOVE THE CATS AND THE PINK COLOR.
         </p>
+
+        <h2>Referencias</h2>
+        <table><!--TABLA-->
+            <tr><!--fila-->
+                <th>Nombre</th><!--encabezado de la tabla-->
+                <th> Edad </th>
+                <th>Estudios</th>
+            </tr>
+            <tr><!--fila-->
+                <td>Luisa Fernanda</td><!--contenido de la tabla-->
+                <td>  19 </td>
+                <td>Ingenieria de sistemas</td>
+            </tr>
+            <tr>
+              <td>Andres Fernando</td>
+              <td>  21 </td>
+              <td>Relaciones Internacionales</td>
+          </tr>
+        </table>
       </section>
+
       <section>
         <h2>My hobbies</h2><!--subtitulo-->
         <p><!--parrafos-->
@@ -45,12 +68,20 @@
             escuchar musica y ver series.
         </p>
       </section> 
+
         <section>
             <h3>MY FAMILY</h3>
             <p>
                 En mi falilia somos 4 mis padres mi hermano y yo, somos una familia unida , alegra y de un ambiente genial ,
                 nuestros planes soy el baile  y viajar a conocer partes diversas que nos rodean .
             </p>
+            <h3>MY VIDEO</h3>
+           <video src="./assets/video.mp4"  controls></video><!--video-->
+            <!--el src es la ruta del video y el controls es para que se pueda pausar y reproducir-->
+            <H3>MY FAVORITE SONG</H3><!--cancion favorita-->
+            <audio src="./assets/audio.mp3" controls></audio><!--audio-->
+            <p>VIDEO CANCION</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qyGx4rxoeSg?si=HgrXyRTsw0gnvyoD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <!--textos falsos para cuansdo no se sabe todavia que escribir pero dejar el espacio = -->
     <!--SIEMPRE SE PONEN LOREM y si quiere largo se MULTIPLICA= LOREM *5 -->
     <!--SI ES SOLO CORTO SE PONE LOREM NADA MAS-->
@@ -59,6 +90,7 @@
         Lorem, ipsum dolor.<!--utilizando 3 palabras=LOREM3-->
     </p>
      </section>
+
      <section>
         <h3>MY FAVORITE FOOD </h3>
         <p>PASTA A LA BOLOÑESA </p>
@@ -79,22 +111,38 @@
         <li>se sirve y agrega toque de cilantro para disfrutar</li>
        </ol>
     </section>
+
     </main>
     <!--el ASIDE es contienido secundario-->
     <aside>
         <!--para pegar links externos y se habra en otra pestaña:-->
         <a href="https://github.com/lufernanda-05" 
         target="_blank" 
-        rel="noopener noreferrer">GITHUB</a><!--nombre de la pagina-->
+        rel="noopener noreferrer"> PAGINA GITHUB</a><!--nombre de la pagina-->
     </aside>
+
+    <hr />
+    <!--PONER FORMULARIOS:-->
+    <form><!--etiqueta para formularios-->
+      <h2>CONTACTAME</h2><!--subtitulo-->
+      <label for="name">Nombre:</label><!--etiqueta para el nombre-->
+      <input type="text" id="name" /><!--input=para escribir, el ID permite escribir-->
+      <!--otra forma corta de poner :-->
+      <label>Email:</label><!--etiqueta para el email-->
+      <input type="email" /><!--input=para escribir-->
+      <label for="message">Mensaje:</label><!--etiqueta para el mensaje-->
+      <textarea id="message" rows="4" cols="50"></textarea><!--textarea=para escribir un mensaje largo-->
+      <button type="submit">Enviar</button><!--boton para enviar el formulario-->
+  </form>
+  <hr />
+
     <!--pie de pagina-->
     <footer id="botton"><!--BOTON PARA SUBIR DE ABAJO AL PRINCIPIO-->
-        <p> contect footer</p>
-        <p> <a href="#top">Top</a></p>
+        <p> <a href="#top">VOLVER AL INICIO</a></p>
     </footer>
     <!--etiquetas genericas: no relevante y si no quiere que se EJECUTE O MUESTRE SE PONE COMO COMENTARIO:-->
-    <div></div><!--ES TIPO BLOQUE-->
-    <span> </span><!--tipo en linea-->
+    <div></div><!--ES TIPO BLOQUE: ocupa tpodo el aqncho de lado a lado de la apgina-->
+    <span> </span><!--tipo en linea: ocupa solo lo necesaeio en el contenido-->
      <!--los botones para la apariencia de espichar o dar formularios= <BUTTON> y en la mitad la palabra que queremos que diga ese boton-->
         <button>da click aqui </button>
 </body>
