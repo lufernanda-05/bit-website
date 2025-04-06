@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOR DE FONDO A LAS CAJAS</title><!--bacgrounds-->
+    <style>
+        .box{
+            width: 150px;/*ancho de la caja*/
+            height: 150px;/*alto de la caja*/
+            border:1px solid black;/*color del borde*/
+            margin-bottom: 10px;/*margen inferior*/
+            background-color: aqua;/*para cuando la imagen con url no se muestra tenga un color como segunda opcion*/
+        }
+        
+        .bg-color{
+            background-color: rgb(236, 156, 156);/*color de fondo*/
+        }
+
+        .bg-degrade-linear{
+            background-image: linear-gradient(green, blue);/*degradado lineal de color*/
+        }
+
+        .bg-degrade-radial{
+            background-image: radial-gradient(pink, blue);/*degradado radial de color en el centro*/
+        }
+
+        .bg-degrade-conic{
+            background-image: conic-gradient(green, blue);/*degradado cónico de color*/
+        }
+
+        .rectangle-box {
+        width: 350px;
+        height: 150px;
+        border: 2px solid black;
+        margin-bottom: 10px;
+        background-repeat: no-repeat;
+        background-color: aqua;
+      }
+
+        .bg-img-large{
+            background-image: url(https://png.pngtree.com/background/20211215/original/pngtree-abstract-colorful-background-wallpaper-picture-image_1456903.jpg);/*imagen de fondo*/
+            background-size: cover;/*para que la imagen cubra toda la caja*/
+        }
+
+        .bg-img-small{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFoDSm4gbekx9xSKi6ImmDgy4M6g8bxM8FxA&s);
+            background-repeat: no-repeat  ;/*para que la imagen no se repita o rellene el cuadro*/
+            background-size: contain;/*para que la imagen se ajuste a la caja*/
+            background-position: center;/*para que la imagen se centre en la caja*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>backgrounds</h1>
+    <hr/>
+    <div class="box bg-color "></div>
+    <div class="box bg-degrade-linear">hello</div>
+    <div class="box bg-degrade-radial"></div>
+    <div class="box bg-degrade-conic"></div>
+    <div class="box bg-img-large"></div>
+    <div class="box bg-img-small"></div><!--caja normal cuadrada-->
+    <div class="rectangle-box bg-img-large"></div><!--caja rectangular-->
+    <div class="rectangle-box bg-img-small"></div><!--caja rectangular-->
+</body>
+</html>

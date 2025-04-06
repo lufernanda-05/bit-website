@@ -1,3 +1,41 @@
-div{
-    border: 2px solid rgb(153, 239, 155);
+/*para meterle estilo se pone dentro de 
+corchetes ytodo l orespectivo que quiera hacer*/
+body{
+    background-color: rgb(247, 174, 174);/*color de fondo*/
+    /*color de fondo del body*/
+}
+box-one{
+    width: 300px;/*ancho del cuadro*/
+    height: 300px;/*alto del cuadro*/
+    border-width: 5px;/*ancho del borde*/
+    border-style: solid;/*borde solido*/
+    border-color: rgb(250, 162, 250);/*color del borde*/
+    background-color: rgb(255, 255, 255);/*color de fondo*/
+    /*tomar distancia del borde hacia afuera= margin-top*/
+}
+.box-two{
+    width: 300px;
+    height: 300px;  
+    border-width: 5px;
+    border-style: solid;/*borde solido*/
+    border-color: rgb(140, 226, 249);/*color del borde*/
+    background-color: rgb(255, 255, 255);/*color de fondo*/
+    padding-top: 20px;
+}
+.box-three{
+    width: 300px;
+    height: 300px;  
+    border-width: 5px;
+    border-style: solid;/*borde solido*/
+    border-color: rgb(169, 243, 171);/*color del borde*/
+    background-color: rgb(255, 255, 255);/*color de fondo*/
+    margin-top: 20px;
+}
+/*para dar estilo con un id= se pone en #*/
+#id1{
+    color: blueviolet;
+}
+/*para dar estilo con una clase se comienza con (.) #*/
+.class1{
+    color: rgb(249, 117, 81);
 }

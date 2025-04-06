@@ -1,0 +1,84 @@
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>layout flexbox</title>
+            <style>
+                * {
+                    box-sizing: border-box;/*cambia el tamaño de la caja*/
+                }
+
+                /* Establece el tamaño de la fuente y el color de fondo para todo el documento */
+                html{
+                    height: 100%;
+                }
+                body {
+                    height: 512px;/*altura*/
+                    margin: 0;/*margen*/
+                    display: flex;/*cambia la posicion de las cajas una al lado de la otra segun el contenido*/
+                    border: 2px solid red;/*borde de la caja*/
+                    width: 1021px;/*ancho*/
+                    margin-top: 100px;/*margen superior*/
+                    margin-left: auto;/*margen izquierdo*/
+                    margin-right: auto;/*margen derecho*/
+                    flex-wrap: wrap;/*cambia el orden de las cajas*/
+                }
+                header,
+                nav,
+                main,
+                aside,
+                footer{
+                    display: flox;/*cambia la posicion de las cajas una al lado de la otra segun el contenido*/
+                    justify-content: center;/*centra el contenido*/
+                    align-items: center;
+                }
+
+                /*estilos convinados*/
+                header,
+                nav,
+                footer{
+                    width: 100%;/*ancho*/
+                }
+
+                main,aside{
+                    height: 336px;/*altura*/
+
+                }
+
+                /* hacer cambio y estilos individuales*/
+                header {
+                    border: 2px solid green;
+                    height: 100px;/*altura*/
+                }
+
+                nav {
+                    border: 2px solid orangered;
+                    height: 42px;
+                }
+
+                main {
+                    flex-grow: 1; /*espacio restante*/
+                    background-color: #f44336; /* Red */
+                    color: white;
+                }
+
+                aside {
+                    border: 2px solid red;
+                    width: 25%;
+                }
+
+                footer {
+                    border: 2px solid brown;
+                    height: 30px;/*altura*/
+                }
+                </style>
+        </head>
+        <body>
+            <header>header content</header>
+            <nav>navcontent</nav>
+            <main>main content</main>   
+            <aside>aside content</aside>
+            <footer>footer content</footer>
+        </body>
+        </html>

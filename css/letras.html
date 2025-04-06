@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tipografica</title><!--fonts-->
+    <style>
+        @font-face{
+             font-family: "MyFont";
+             src: url("./fonts/BungeeTint-Regular.ttf");
+         }
+
+        .texto-0{
+            font-style: oblique;/*normal, italic, oblique*/
+            font-weight: 400; /*el rango es 100 y 900 el mas grande*/
+            font-size: 32px;/*el limite lo pone unodel tamaño de letra*/
+             color: orangered;/*color*/
+             background-color: yellow;/*color de fondo*/
+             padding: 32px;/*espacio entre el borde y el texto*/
+             text-align: justify;/*derecha,* izquierda, center, justify*/
+             text-transform: capitalize;/**mayusculas, minusculas, capitalize*/
+        }
+
+        .texto-1 {
+            font-family: Arial, Helvetica, sans-serif, ;/**fuente por defecto*/
+            font-size: 18px;/*el limite lo pone uno del tamaño de letra*/
+            color: #333;
+            background-color: antiquewhite;
+        }
+
+        .texto-2 {
+            font-family: 'Courier New', Courier, monospace;
+            color: #ef0a0a;
+        }
+
+        .texto-3{
+            font-family: "myFont", sans-serif;/*fuente descargada*/
+            color: aqua;
+        }
+
+        .texto-4{
+            font-family: "caveat",cursive;
+            column-rule-color: rgb(107, 107, 101);
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>fuentes y tipografia</h1>
+    <hr>
+    <p class="texto-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+    <p class="texto-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+    <!--*PARA PONER FUENTE DESCARGADA se importa con un @font-face{} y OTRA FORMA ES:-->
+    <p class="texto-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+    <p class="texto-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+    <p class="texto-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae deleniti incidunt fugiat, voluptas magni velit corporis ipsa id illo possimus adipisci! Odit mollitia voluptatem quos corrupti assumenda aliquam. Velit, facere?
+    Corrupti, suscipit, nobis quia, dolore eos tenetur enim quos aliquid in voluptatibus vitae dolorum aspernatur esse repellat illum quam? Voluptatum optio, delectus laudantium est exercitationem repudiandae facere earum numquam perferendis.</p>
+</body>
+</html>

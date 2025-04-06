@@ -6,20 +6,29 @@
     <!--EL VIEWPORT= es el area del navegador si es pequeño grande o mediano-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mi pagina</title><!--NOMBRE DE LA PAGINA COMO VA APARECER-->
-    <!--color de fondo para la pagina se arrasta desde otra pagina-->
-    <link rel="stylesheet" href="./styles/fondos.css">
+    <!--color de fondo para la pagina se arrasta desde otra pagina =enlazar-->
+    <link rel="stylesheet" href="./styles/estilos.css">
     <!--logo de la pagina= -->
     <link rel="shortcut icon" href="./assets/portada.png" type="image/x-icon">
+    <!----------------------CLASES EN EL STYLE--------------------------------------->
+    <style>
+      
+
+    </style>
 </head>
 <body>
   <!--para agregar 3 veces un h1 h2 y h3 una forma abreviada h${hello.$}*3 -->
     <header id="top"><!--EL ID es un atributo unico -->
         <H1>LUISA FERNANDA BERNAL</H1><!--titulo principal-->
     </header><!--etiqueta semantica-->
-    <img src="./assets/foto.jpg" alt="mi foto">
-      <hr /><!--se dibuja una linea horizontal-->
-      <nav>
-        
+    <section class="posicion">
+      <figure>
+      <img src="./assets/foto.jpg" alt="mi foto"/>
+    </figure>
+    </section>
+    <hr /><!--se dibuja una linea horizontal-->
+
+      <nav class="menu">
         <h2>REDES SOCIALES DE CONTACTO</h2>
        <!--redirecciones=<!--href que es la ruta del archivo= <A HREF ENTER Y LUEGO PONE > Y YA SE COMPLETA-->
        <!--el numeral=#=para que no se vaya a ningun lado pero esta en el link-->
@@ -30,9 +39,10 @@
         <a href="https://www.instagram.com/">instagram</a>
       </nav><!--etiqueta semantica-->
       <hr/>
+      <div>
       <main><!--etiqueta semantica-->
 
-      <section><!--para poner parrafos, subtitulos,-->
+      <section class="perfil"><!--para poner parrafos, subtitulos,-->
         <h2>Mi perfil</h2><!--subtitulo-->
         <p><!--parrafos-->
             My name is Luisa Fernanda Bernal Gordillo I am 19 years old, a systems engineering student,
@@ -40,8 +50,10 @@
              and dedicated to my things .
              I LOVE THE CATS AND THE PINK COLOR.
         </p>
+      </section>
 
-        <h2>Referencias</h2>
+      <section class="referencia"><!--subtitulo-->
+        <h2>REFERENCIAS</h2>
         <table><!--TABLA-->
             <tr><!--fila-->
                 <th>Nombre</th><!--encabezado de la tabla-->
@@ -61,41 +73,45 @@
         </table>
       </section>
 
-      <section>
+      <section class="hobbies"><!--subtitulo-->
         <h2>My hobbies</h2><!--subtitulo-->
+        <div class="box bg-img-small"></div><!--caja con imagen de fondo-->
         <p><!--parrafos-->
             Me gusta ir al gym salir en familia , aprobecho mis espacios personales para tener tiempo conmigo misma 
             escuchar musica y ver series.
         </p>
       </section> 
 
-        <section>
-            <h3>MY FAMILY</h3>
+        <section class="familia">
+          <h3>MY FAMILY</h3>
+           <img src="/assets/familia.jpeg"width="200" height="200"="mi familia">
             <p>
-                En mi falilia somos 4 mis padres mi hermano y yo, somos una familia unida , alegra y de un ambiente genial ,
+                En mi falilia somos 4 mis padres mi hermano y yo, una familia unida , alegre y de un ambiente genial ,
                 nuestros planes soy el baile  y viajar a conocer partes diversas que nos rodean .
             </p>
+        </section>
+
+        <section class="video">
             <h3>MY VIDEO</h3>
-           <video src="./assets/video.mp4"  controls></video><!--video-->
+           <video src="./assets/videos.mp4" width="300"height="300"controls></video><!--video-->
             <!--el src es la ruta del video y el controls es para que se pueda pausar y reproducir-->
-            <H3>MY FAVORITE SONG</H3><!--cancion favorita-->
+          </section>
+
+            <H4>MY FAVORITE SONG</H4><!--cancion favorita-->
             <audio src="./assets/audio.mp3" controls></audio><!--audio-->
-            <p>VIDEO CANCION</p>
+
             <iframe width="560" height="315" src="https://www.youtube.com/embed/qyGx4rxoeSg?si=HgrXyRTsw0gnvyoD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <!--textos falsos para cuansdo no se sabe todavia que escribir pero dejar el espacio = -->
     <!--SIEMPRE SE PONEN LOREM y si quiere largo se MULTIPLICA= LOREM *5 -->
     <!--SI ES SOLO CORTO SE PONE LOREM NADA MAS-->
     <!--EL OTRO ES LOREM Y UN NUMERO QUE INDICA LA CANTIDAD DE PALABRAS -->
-    <p>
-        Lorem, ipsum dolor.<!--utilizando 3 palabras=LOREM3-->
-    </p>
-     </section>
 
-     <section>
+     <section class="food">
         <h3>MY FAVORITE FOOD </h3>
-        <p>PASTA A LA BOLOÑESA </p>
+        <h5>pasta a la boloñesa</h5>
         <img src="./assets/pas.jpg" alt="PASTA">
          <!--listas desordenadas = ul: muestra sin numeracion sino algun icono-->
+        </section>
        <ul>
        <h4>INGREDIENTES:</h4>
         <li>leche</li>
@@ -106,11 +122,11 @@
         <!--listas ordenadas : mustran con numeracion -->
        <ol>
         <h5>PREPARACION:</h5>
-        <li>se pone a hervir el agua para hablandar la pasta</li>
+        <li> se pone a hervir el agua para hablandar la pasta</li>
         <li>se prepara el riogo con los ingredientes y sabores algusto</li>
         <li>se sirve y agrega toque de cilantro para disfrutar</li>
        </ol>
-    </section>
+    
 
     </main>
     <!--el ASIDE es contienido secundario-->
@@ -135,13 +151,13 @@
       <button type="submit">Enviar</button><!--boton para enviar el formulario-->
   </form>
   <hr />
-
+  <!--El div ES TIPO BLOQUE: ocupa tpodo el aqncho de lado a lado de la apgina-->
+  </div>
     <!--pie de pagina-->
     <footer id="botton"><!--BOTON PARA SUBIR DE ABAJO AL PRINCIPIO-->
         <p> <a href="#top">VOLVER AL INICIO</a></p>
     </footer>
     <!--etiquetas genericas: no relevante y si no quiere que se EJECUTE O MUESTRE SE PONE COMO COMENTARIO:-->
-    <div></div><!--ES TIPO BLOQUE: ocupa tpodo el aqncho de lado a lado de la apgina-->
     <span> </span><!--tipo en linea: ocupa solo lo necesaeio en el contenido-->
      <!--los botones para la apariencia de espichar o dar formularios= <BUTTON> y en la mitad la palabra que queremos que diga ese boton-->
         <button>da click aqui </button>

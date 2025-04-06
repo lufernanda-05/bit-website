@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bordes</title>
+    <style>
+        .box{
+            width: 150px;/*ancho de la caja*/
+            height: 150px;/*alto de la caja*/
+            border-color:black ;/*color del borde*/
+            border-width: 5px;/*grosor del borde*/
+            margin-bottom: 10px;/*margen inferior*/
+        }
+/**para crear un borde de un solo lado se usa border-derecha, border-izquierdo, border-arriba, border-abajo: y el primer valor es (y) y el otro (x)*/
+        .b-solid{
+            border-style: solid;/*tipo de borde*/
+            border-radius: 50px;/*redondear las esquinas*/
+        }
+
+        .b-dashed{
+            border-style: dashed;
+            border-radius: 20px;
+        }
+
+        .b-dotted{
+            border-style: dotted;/*borde punteado*/
+            border-radius: 20px 50px;/**/
+        }
+
+        .b-double{
+            /*para solo este se usa en el sentido de las agujas del reloj y los demas al contrario*/
+            border-style: double;/*doble borde*/
+            border-radius: 50% 10%;/*redondear las esquinas*/
+        }
+
+        .b-groove{
+            border-style: groove;/*borde con relieve*/
+            border-radius: 50% 10%;
+        }
+    </style>
+</head>
+<body>
+    <h1>BORDES</h1>
+    <hr/>
+    <!--para crear varias cajas de una sola o etiquetas se pone el nombre y la cantidad en numero:-->
+<div class="box b-solid"></div><!--caja con borde solido-->
+<div class="box b-dashed"></div><!--caja con borde punteado-->
+<div class="box b-dotted"></div><!--caja con borde pepiado-->
+<div class="box b-double"></div><!--caja con borde doble-->
+<div class="box b-groove"></div><!--caja con borde con relieve-->
+</body>
+</html>

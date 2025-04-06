@@ -1,0 +1,205 @@
+/*estilos para mi pagina creada*/
+
+/*----------- FONDO DE LA PAGINA----------------------*/
+
+body {
+    /*color para el fondo degradado*/
+    background: linear-gradient(40deg, rgb(227, 135, 245) 48%, rgb(241, 131, 131) 100%);
+}
+/*PARA PONER COLOR A TODO EL TEXTO DE UNO SOLO SE PONE EL COLOR 
+EN EL BODY*//*para poner todos los titulos en un color = agruparlos h1,h2*/
+/*--------------------- PARAFOS --------------------------*/
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(9, 9, 9);/*color del texto*/
+}
+
+/*----------------- ESTILO TITULO PINCIPAL-----------------*/
+
+h1{
+    color: rgb(9, 9, 9);/*color del texto*/
+    background: linear-gradient(40deg, rgb(77, 222, 232) 48%, rgb(145, 96, 250) 100%);
+    text-align: center;/*centra el texto*/
+    font-size: 2.5em;/*tamaño de la fuente*/
+    font-family:'Times New Roman', Times, serif/*fuente del texto*/
+    
+}
+
+/*----------------- FOTO PRINCIPAL -----------------*/
+
+.posicion{
+    text-align: center;/*centra la foto*/
+}
+.posicion-img{
+    width: 300px;/*ancho de la foto*/
+    height: 300px;/*alto de la foto*/
+    border-radius: 50%;/*redondea la foto*/
+}
+/*----------------- links redes sociales -----------------*/
+
+.menu {
+    h2{
+        font-family: 'Times New Roman', Times, serif;/*fuente del texto*/
+        background: linear-gradient(40deg, rgb(77, 222, 232) 40%, rgb(145, 96, 250) 60%);
+        color: rgb(233, 237, 237);
+        text-transform: uppercase;/*letra mayuscula*/
+        text-align: center;
+    }
+    margin-top: 20px;/*margen superior del menu*/
+    margin-bottom: 20px;/*margen inferior del menu*/
+    text-transform: uppercase;
+    
+}
+
+/*________________________CONTENIDOS SECUNDARIOS____________*/
+/*--------PERFIL-----*/
+.perfil{
+    color: rgb(9, 9, 9);/*color del texto*/
+    text-align: end;/*alinea el texto a la derecha*/
+    font-family: Arial, Helvetica, sans-serif;/*fuente del texto*/
+    h2{
+        font-family: 'Times New Roman', Times, serif;/*fuente del texto*/
+        background: linear-gradient(40deg, rgb(77, 222, 232) 40%, rgb(145, 96, 250) 60%);
+        color: rgb(246, 248, 248);
+        text-transform: uppercase;/*letra mayuscula*/
+        text-align:end;
+       
+    }   
+}
+
+/*----------REFERENCIAS--------------*/
+.referencia{
+    h2{
+        font-family: 'Times New Roman', Times, serif;/*fuente del texto*/
+        background: linear-gradient(40deg, rgb(77, 222, 232) 40%, rgb(145, 96, 250) 60%);
+        color: aliceblue;
+    }
+    
+}
+table {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    width: 80%;/*ancho de la tabla*/
+    margin: auto;/*centra la tabla*/
+    padding: 10px;/*espacio entre la tabla y el borde*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+th{
+    color: blueviolet;
+    text-transform: uppercase;
+}
+th, td {
+    padding: 10px;/*espacio entre la celda y el texto*/
+    text-align: center;/*centra el texto*/
+}
+/*----------------- hobbies-----------------*/
+.hobbies{
+    text-align: center;/*centra el texto*/
+    .box{
+        width: 150px;/*ancho de la caja*/
+        height: 150px;/*alto de la caja*/
+        border:1px solid black;/*color del borde*/
+        margin-bottom: 10px;/*margen inferior*/
+        background-color: aqua;/*para cuando la imagen con url no se muestra tenga un color como segunda opcion*/
+    }
+  .bg-img-small{
+        background-image: url(https://img.freepik.com/foto-gratis/mujer-entrenando-barra-sobre-hombros_651396-1619.jpg);
+        background-repeat: no-repeat  ;/*para que la imagen no se repita o rellene el cuadro*/
+        background-size: contain;/*para que la imagen se ajuste a la caja*/
+        background-position: center;/*para que la imagen se centre en la caja*/
+        border-radius: 50%;/*redondea la caja*/
+        margin: auto;
+    }
+    h2{
+        font-family: 'Times New Roman', Times, serif;/*fuente del texto*/
+        background: linear-gradient(40deg, rgb(77, 222, 232) 40%, rgb(145, 96, 250) 60%);
+        color: rgb(233, 237, 237);
+        text-transform: uppercase;/*letra mayuscula*/
+        text-align: center;
+    }
+}
+
+/*--------------------MI FAMILIA---------------------------*/
+
+.familia{
+    text-align: center;/*centra la foto*/
+    border-radius: 50%;/*redondea la foto*/
+    p{
+        text-align:left;/*centra la foto*/
+    }
+    h3{
+        font-family: 'Times New Roman', Times, serif;/*fuente del texto*/
+        background: linear-gradient(40deg, rgb(77, 222, 232) 40%, rgb(145, 96, 250) 60%);
+        color: rgb(233, 237, 237);
+        text-align:left;/*centra la foto*/
+    }
+}  
+
+/*---------------------------------------------------------------*/
+
+.video{
+    text-align: end;/*centra la foto*/
+    h3{
+        font-family: 'Times New Roman', Times, serif;/*fuente del texto*/
+        background: linear-gradient(40deg, rgb(77, 222, 232) 40%, rgb(145, 96, 250) 60%);
+        color: rgb(233, 237, 237);
+        text-align:right;/*centra la foto*/
+    }
+}
+
+/*-----------------------------------------------------------*/
+
+h4{
+    font-family: 'Times New Roman', Times, serif;/*fuente del texto*/
+    background: linear-gradient(40deg, rgb(77, 222, 232) 40%, rgb(145, 96, 250) 60%);
+    color: rgb(233, 237, 237);
+    text-align: center;/*centra la foto*/
+    text-transform: uppercase;/*letra mayuscula*/
+}
+
+/*-------------------COMIDA Y PREPARACION-------------------------*/
+
+.food{
+  
+    h3{
+        font-family: 'Times New Roman', Times, serif;/*fuente del texto*/
+        background: linear-gradient(40deg, rgb(77, 222, 232) 40%, rgb(145, 96, 250) 60%);
+        color: rgb(233, 237, 237);
+        text-align:left;/*centra la foto*/
+    }
+    h5{
+        font-family:Arial, Helvetica, sans-serif;/*fuente del texto*/
+        text-align:center;/*centra la foto*/
+        color: rgb(41, 41, 243);
+        text-transform: uppercase;/*letra mayuscula*/
+    }
+    
+}
+h5{
+    font-family:Arial, Helvetica, sans-serif;/*fuente del texto*/
+    text-align:center;/*centra la foto*/
+    background: linear-gradient(40deg, rgb(77, 222, 232) 40%, rgb(145, 96, 250) 60%);
+    color: rgb(237, 237, 244);
+    text-transform: uppercase;/*letra mayuscula*/
+}
+li{
+    text-align: left;
+}
+/*----------------------contacto---------------------*/
+
+h2{
+    font-family: 'Times New Roman', Times, serif;/*fuente del texto*/
+    background: linear-gradient(40deg, rgb(77, 222, 232) 40%, rgb(145, 96, 250) 60%);
+    color: rgb(233, 237, 237);
+    text-align: left;/*centra el texto*/
+    text-transform: uppercase;/*letra mayuscula*/
+}
+label{
+    font-family: Arial, Helvetica, sans-serif;/*fuente del texto*/
+    color: rgb(250, 248, 249);/*color del texto*/
+    text-align: center;/*centra el texto*/
+    margin-top: 20px;/*margen superior del label*/
+    margin-bottom: 20px;/*margen inferior del label*/
+}

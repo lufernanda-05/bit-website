@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color</title>
+    <!--poner la etiqueta style permite poner el color aca en el archivo y llamarlo por el nombre -->
+    <style>
+        .name-color{
+            color:red;
+        }
+
+        /*es una mezcla de los 3 colores y los numeros es la intensidad de cada uno */
+        .rgb-color{
+            color: rgb(243, 110, 212); /*rojo,verde,azul*/
+        }
+
+        .rgba-color{
+            color: rgba(61, 29, 240, 0.2); /*rojo,verde,azul,alfa*/
+        }
+        /*el alfa es la opacidad del color, 0=transparente y 1=opaco*/
+
+        .hsl-color{
+            color: hsl(120, 60%, 20%); /* tono, saturacion, luminosidad */
+        }
+
+        .hex-color{
+            color: #c9ef32; /*rojo*/
+        }
+        /*color en base hexadecimal y comienza con # LA MAS COMUN*/
+        
+        .box {
+            width: 150px;/* ancho de la caja */
+            height: 150px; /* alto de la caja */
+            border: 2px solid black; /* borde de la caja */;
+            color: blue;
+        }
+        /*ponerle color de fondo a las cajas=bg*/  
+
+        .bg-name-color {
+            background-color: red; /* color de fondo en nombre */
+        }
+        .bg-rgb-color {
+            background-color: rgb(243, 110, 212); /* color de fondo en rgb */
+        }
+
+        .bg-rgba-color {
+            background-color: rgba(61, 29, 240, 0.2); /* color de fondo en rgba */
+        }
+
+        .bg-hsl-color {
+            background-color: hsl(120, 60%, 20%); /* color de fondo en hsl */
+
+        }
+
+        .bg-hex-color {
+            background-color: #c9ef32; /* color de fondo en hexadecimal */
+            font-family: 'Times New Roman', Times, serif; /* tipo de letra */
+           
+        
+        }
+    </style>
+</head>
+<body>
+    <!--diferente manera de escribir colores:-->
+    <h1>color</h1>
+    <hr/>
+    <section>
+        <h2>keywords or names</h2>
+        <!--1 forma desde el style-->
+        <p class="name-color">Lorem ipsum dolor sit amet.</p>
+        <!--2 forma con la funcion rgb-COLOR =red,green,blue-->
+        <p class="rgb-color">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, illo!</p>
+        <!--EL RGB TIENE UNA SEGUNDA VERSION CON EL ALFA = AGREGAR UNA (A) despues de b*/
+        <!-forma con la funcion rgba-COLOR =red,green,blue,alfa-->
+        <p class="rgba-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, at!</p>
+    
+        <!--3 forma con HSL-COLOR: (h)=tono= 0 A 360,(S) saturacion=0 AL 100%,(L)= LUMINOCIDAD=0 a 100%-->
+        <p class="hsl-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, at!</p>
+        <!--4 forma mas usada: HEX-COLOR= en base hexadecimal y comienza con #-->
+        <p class="hex-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, et sed.</p>
+        <!--el div ubicca todo en tipo bloque = de para abajo-->
+        <div class="box bg-name-color">name color</div>
+        <div class="box bg-rgb-color">rgb color</div>
+        <div class="box bg-rgba-color">rgba color</div>
+        <div class="box bg-hsl-color">hsl color</div>
+        <div class="box bg-hex-color">hex color</div>
+    </section>
+</body>
+</html>
