@@ -78,8 +78,10 @@ h1{
     
 }
 table {
-    border: 2px solid black;
-    border-radius: 10px;
+    border-style: dotted;/*borde punteado*/
+    border-color: rgb(88, 224, 248);/*color del borde*/
+    margin-top: 20px;/*margen superior de la tabla*/
+    border-radius: 20px;
     background-color: white;
     width: 80%;/*ancho de la tabla*/
     margin: auto;/*centra la tabla*/
