@@ -39,17 +39,17 @@ h1{
 /*----------------- links redes sociales -----------------*/
 
 .menu {
+    margin-top: 20px;/*margen superior del menu*/
+    margin-bottom: 20px;/*margen inferior del menu*/
+    text-align:left;/*centra el menu*/
+    text-transform: uppercase;
     h2{
         font-family: 'Times New Roman', Times, serif;/*fuente del texto*/
         background: linear-gradient(40deg, rgb(77, 222, 232) 40%, rgb(145, 96, 250) 60%);
         color: rgb(233, 237, 237);
         text-transform: uppercase;/*letra mayuscula*/
         text-align: center;
-    }
-    margin-top: 20px;/*margen superior del menu*/
-    margin-bottom: 20px;/*margen inferior del menu*/
-    text-transform: uppercase;
-    
+    }   
 }
 
 /*________________________CONTENIDOS SECUNDARIOS____________*/
@@ -91,10 +91,15 @@ table {
 th{
     color: blueviolet;
     text-transform: uppercase;
+    
 }
 th, td {
     padding: 10px;/*espacio entre la celda y el texto*/
     text-align: center;/*centra el texto*/
+    border: 1px solid /*borde de la celda*/
+    rgb(88, 224, 248);/*color del borde*/
+    
+    
 }
 /*----------------- hobbies-----------------*/
 .hobbies{
