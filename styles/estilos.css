@@ -205,9 +205,33 @@ h2{
 }
 label{
     font-family: Arial, Helvetica, sans-serif;/*fuente del texto*/
-    color: rgb(250, 248, 249);/*color del texto*/
+    color: rgb(14, 13, 13);/*color del texto*/
     text-align: center;/*centra el texto*/
     margin-top: 20px;/*margen superior del label*/
     margin-bottom: 20px;/*margen inferior del label*/
 }
+form{
+    text-align: center;/*centra el formulario*/
+    margin-top: 20px;/*margen superior del formulario*/
+    margin-bottom: 20px;/*margen inferior del formulario*/
+    input{
+        width: 200px;/*ancho del input*/
+        height: 30px;/*alto del input*/
+        border-radius: 10px;/*redondea el input*/
+        border: 1px solid rgb(88, 224, 248);/*borde del input*/
+        background-color: white;/*color de fondo del input*/
+        margin-bottom: 10px;/*margen inferior del input*/
+    }
+}
 /*---------------------button---------------------*/
+button{
+    width: 100px;/*ancho del boton*/
+    height: 30px;/*alto del boton*/
+    border-radius: 10px;/*redondea el boton*/
+    border: 1px solid rgb(88, 224, 248);/*borde del boton*/
+    background: linear-gradient(40deg, rgb(83, 13, 247) 40%, rgb(27, 147, 245) 60%);/*color de fondo del boton*/
+    color: white;/*color del texto del boton*/
+    font-family: Arial, Helvetica, sans-serif;/*fuente del texto del boton*/
+    margin-top: 20px;/*margen superior del boton*/
+    margin-bottom: 20px;/*margen inferior del boton*/
+}

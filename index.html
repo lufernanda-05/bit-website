@@ -28,18 +28,21 @@
        <!--redirecciones=<!--href que es la ruta del archivo= <A HREF ENTER Y LUEGO PONE > Y YA SE COMPLETA-->
        <!--el numeral=#=para que no se vaya a ningun lado pero esta en el link-->
        <a href="#">no redireccionar a ningun sitio</a>
-       <br/>
-        <a href="https://co.pinterest.com/">PINTEREST</a>
         <br/>
-        <a href="https://www.youtube.com/">YOUTUBE</a>
-        <br/>
+        <!--redireccionar a un sitio externo en la misma pagina-->
+        <a href="https://web.telegram.org/">TELEGRAM</a>
       </nav><!--etiqueta semantica-->
       <aside>
-        <!--para pegar links externos y se habra en otra pestaña:-->
-        <a href="https://github.com/lufernanda-05" 
-        target="_blank" 
-        rel="noopener noreferrer"> PAGINA GITHUB</a><!--nombre de la pagina-->
-    </aside>
+        <ul><!--listas desordenadas = ul: muestra sin numeracion sino algun icono y que abra en otra pagina-->
+            <li><a href="https://co.pinterest.com/" target="_blank" 
+              rel="noopener noreferrer">PINTERES</a></li>
+              <br/>
+            <li><a href="https://www.instagram.com/"target="_blank" 
+              rel="noopener noreferrer">INSTAGRAM</a></li><!--enlace a instagram-->
+              <br/>
+            <li><a href="https://www.youtube.com/"target="_blank"rel="noopener noreferrer">YOUTUBE</a></li>
+            <br/>
+      </aside>
       <hr/>
       <div>
       <main><!--etiqueta semantica-->
@@ -142,7 +145,9 @@
       <input type="text" id="name" /><!--input=para escribir, el ID permite escribir-->
       <!--otra forma corta de poner :-->
       <label>Email:</label><!--etiqueta para el email-->
-      <input type="email" /><!--input=para escribir-->
+      <input type="email" />
+      <label>Tel:</label>
+      <input type="Tel" /><!--input=para escribir-->
       <label for="message">Mensaje:</label><!--etiqueta para el mensaje-->
       <textarea id="message" rows="4" cols="50"></textarea><!--textarea=para escribir un mensaje largo-->
       <button type="submit">Enviar</button><!--boton para enviar el formulario-->
