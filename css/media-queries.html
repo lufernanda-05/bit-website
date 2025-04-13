@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIA QUERIES</title>
+    <style>
+         /*BREAKPOINT:puntos de quiebre= al ancho de una area visible en el navegar */
+         /*Mobile first : la tecnica trata de acomodar de arriba a abajo para las pantallas mas pequeñas a las mas grandes.
+         
+         comienza siempre con el @*/
+    /*VIEWPORT: Cuando la pantalla es menor a 576px es muy pequeña, y pequeñas de >=576px, 
+    medianas>=768px= para tablets
+    grandes>=992px= para computadores
+    extra grandes>=1200px
+    y la mas grande es>=1400px*/
+    /*este seria el estilo para  pantallas mas pequeñas*/
+
+    /*para hacerla de mayor a mayor se pone desktop-first max-width:1400 y va bajando  */
+
+    /*para hacerla de menor a mayor se pone min-width:1400 y va subiendo  */
+    
+    /*y se puede convinar tambien  poniendo minimo 160 and maximo320 y sino esta en ese rango pasa al anterior */
+
+    h1{
+        background-color: black;
+        color: white;
+        padding: 32px;
+    }
+    /*pantallas pequeñas*/
+    @media screen and (min-width: 576px) {
+        /*se pone adentro lo que quiere cambiar de los estilos y lo que no deja igual*/
+        h1{
+        background-color: rgb(86, 37, 234);
+        color: rgb(13, 1, 1);
+    }
+    }
+    /*pantallas medianas*/
+    @media screen and (min-width: 768px) {
+        h1{
+        background-color: rgb(255, 0, 0);
+    }
+    }
+    /*pantallas grandes=large*/
+    @media screen and (min-width: 992px) {
+        h1{
+        background-color: rgb(0, 255, 0);
+    }
+    }
+    /*pantallas extra grandes=extra large*/ 
+    @media screen and (min-width: 1200px) {
+        h1{
+        background-color: rgb(0, 0, 255);
+    }
+    }
+    /*pantallas extra extra grandes=extra extra large*/
+    @media screen and (min-width: 1400px) {
+        h1{
+        background-color: rgb(255, 0, 255);
+    }
+    }
+    </style>
+</head>
+<body>
+    <h1>Media Queries</h1>
+   <hr/>
+</body>
+</html>

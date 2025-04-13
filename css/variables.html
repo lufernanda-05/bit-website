@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS VARIABLES</title>
+    <hr/>
+    <style>
+       /*declaramos la variables que se empiezan siempre con 2 puntos ,nombre de la variable referente a lo que quiera decir aca en el root*/
+        :root {
+            --Primary-color: rgb(128, 51, 251);
+            --secondary-color: black;
+            --white-color: white;
+            
+        }
+        /*como se usa la varible se llama con el var*/
+        .principal {
+            color: var(--Primary-color);
+        }
+        .secondary {
+            color: var(--white-color);
+            background-color: var(--secondary-color);
+        }
+
+    </style>
+</head>
+<body>
+    <h2>CSS Variables</h2>
+    <p class="principal">CSS variables, also known as custom properties, are entities defined by CSS authors that contain specific values to be reused throughout a document.</p>
+    <p class="secondary">CSS variables are case-sensitive and can be defined in any CSS selector, but they are most commonly defined in the :root selector to make them globally accessible.</p>
+</body>
+</html>

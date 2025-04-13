@@ -15,15 +15,45 @@ p{
     color: rgb(9, 9, 9);/*color del texto*/
 }
 
-/*----------------- ESTILO TITULO PINCIPAL-----------------*/
+/*---------ESTILO TITULO PINCIPAL CON MOBILE fIRST-----------------*/
 
 h1{
     color: rgb(9, 9, 9);/*color del texto*/
     background: linear-gradient(40deg, rgb(77, 222, 232) 48%, rgb(145, 96, 250) 100%);
     text-align: center;/*centra el texto*/
     font-size: 2.5em;/*tamaño de la fuente*/
-    font-family:'Times New Roman', Times, serif/*fuente del texto*/
-    
+    font-family:'Times New Roman', Times, serif/*fuente del texto*/ 
+}
+
+@media screen and (min-width: 576px) {
+    h1{
+    background:linear-gradient(40deg, rgb(246, 148, 73) 48%, rgb(227, 240, 48) 100%);
+}
+}
+
+@media screen and (min-width: 768px) {
+    h1{
+    background:linear-gradient(40deg, rgb(138, 237, 88) 48%, rgb(35, 246, 242) 100%);
+}
+}
+
+@media screen and (min-width: 992px) {
+    h1{
+        background:linear-gradient(40deg, rgb(16, 54, 244) 48%, rgb(223, 6, 32) 100%);
+    color: #fdfbfb;
+}
+}
+
+@media screen and (min-width: 1200px) {
+    h1{
+        background:linear-gradient(40deg, rgb(233, 4, 130) 48%, rgb(241, 7, 217) 100%);
+}
+}
+
+@media screen and (min-width: 1400px) {
+    h1{
+        background:linear-gradient(40deg, rgb(1, 37, 25) 48%, rgb(55, 57, 57) 100%);
+}
 }
 
 /*----------------- FOTO PRINCIPAL -----------------*/
@@ -53,20 +83,6 @@ h1{
 }
 
 /*________________________CONTENIDOS SECUNDARIOS____________*/
-/*--------PERFIL-----*/
-.perfil{
-    color: rgb(9, 9, 9);/*color del texto*/
-    text-align: end;/*alinea el texto a la derecha*/
-    font-family: Arial, Helvetica, sans-serif;/*fuente del texto*/
-    h2{
-        font-family: 'Times New Roman', Times, serif;/*fuente del texto*/
-        background: linear-gradient(40deg, rgb(77, 222, 232) 40%, rgb(145, 96, 250) 60%);
-        color: rgb(246, 248, 248);
-        text-transform: uppercase;/*letra mayuscula*/
-        text-align:end;
-       
-    }   
-}
 
 /*----------REFERENCIAS--------------*/
 .referencia{
@@ -109,7 +125,7 @@ th, td {
         height: 150px;/*alto de la caja*/
         border:1px solid black;/*color del borde*/
         margin-bottom: 10px;/*margen inferior*/
-        background-color: aqua;/*para cuando la imagen con url no se muestra tenga un color como segunda opcion*/
+        background-color: rgb(246, 79, 79);/*para cuando la imagen con url no se muestra tenga un color como segunda opcion*/
     }
   .bg-img-small{
         background-image: url(https://img.freepik.com/foto-gratis/mujer-entrenando-barra-sobre-hombros_651396-1619.jpg);
@@ -130,17 +146,18 @@ th, td {
 
 /*--------------------MI FAMILIA---------------------------*/
 
+
 .familia{
     text-align: center;/*centra la foto*/
-    border-radius: 50%;/*redondea la foto*/
-    p{
-        text-align:left;/*centra la foto*/
-    }
+    border-style:groove;/*borde con relieve*/
+    border-color: rgb(227, 27, 190);
+    background-color: rgb(160, 160, 248);
+
     h3{
         font-family: 'Times New Roman', Times, serif;/*fuente del texto*/
         background: linear-gradient(40deg, rgb(77, 222, 232) 40%, rgb(145, 96, 250) 60%);
         color: rgb(233, 237, 237);
-        text-align:left;/*centra la foto*/
+        
     }
 }  
 
@@ -196,6 +213,12 @@ li{
 }
 /*----------------------contacto---------------------*/
 
+textarea{
+    border-radius: 10px;/*redondea el textarea*/
+    border: 1px solid rgb(88, 224, 248);/*borde del textarea*/
+    background-color: white;/*color de fondo del textarea*/
+    margin-bottom: 10px;/*margen inferior del textarea*/
+}
 h2{
     font-family: 'Times New Roman', Times, serif;/*fuente del texto*/
     background: linear-gradient(40deg, rgb(77, 222, 232) 40%, rgb(145, 96, 250) 60%);
@@ -206,22 +229,22 @@ h2{
 label{
     font-family: Arial, Helvetica, sans-serif;/*fuente del texto*/
     color: rgb(14, 13, 13);/*color del texto*/
-    text-align: center;/*centra el texto*/
+    text-align: left;/*centra el texto*/
     margin-top: 20px;/*margen superior del label*/
     margin-bottom: 20px;/*margen inferior del label*/
 }
 form{
-    text-align: center;/*centra el formulario*/
+    text-align: left;/*centra el formulario*/
     margin-top: 20px;/*margen superior del formulario*/
     margin-bottom: 20px;/*margen inferior del formulario*/
-    input{
-        width: 200px;/*ancho del input*/
-        height: 30px;/*alto del input*/
-        border-radius: 10px;/*redondea el input*/
-        border: 1px solid rgb(88, 224, 248);/*borde del input*/
-        background-color: white;/*color de fondo del input*/
-        margin-bottom: 10px;/*margen inferior del input*/
-    }
+}
+input{
+    width: 200px;/*ancho del input*/
+    height: 30px;/*alto del input*/
+    border-radius: 10px;/*redondea el input*/
+    border: 1px solid rgb(88, 224, 248);/*borde del input*/
+    background-color: white;/*color de fondo del input*/
+    margin-bottom: 10px;/*margen inferior del input*/
 }
 /*---------------------button---------------------*/
 button{
@@ -234,4 +257,15 @@ button{
     font-family: Arial, Helvetica, sans-serif;/*fuente del texto del boton*/
     margin-top: 20px;/*margen superior del boton*/
     margin-bottom: 20px;/*margen inferior del boton*/
+}
+footer{
+    text-align: center;/*centra la foto*/
+    border-style:groove;/*borde con relieve*/
+    border-color: rgb(227, 27, 190);
+    background-color: rgb(9, 241, 218);
+    text-align: center;
+    margin-top: 20px;/*margen superior del footer*/
+    margin-bottom: 20px;/*margen inferior del footer*/
+    font-family: Arial, Helvetica, sans-serif;/*fuente del texto del footer*/
+
 }

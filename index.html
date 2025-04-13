@@ -11,7 +11,31 @@
     <!--logo de la pagina= -->
     <link rel="shortcut icon" href="./assets/portada.png" type="image/x-icon">
     <!----------------------CLASES EN EL STYLE--------------------------------------->
-</head>
+    <style>
+        /*declaramos la variables que se empiezan siempre con 2 puntos ,nombre de la variable referente a lo que quiera decir aca en el root*/
+        :root {
+            --Primary-color: rgb(6, 0, 16);
+            --secondary-color: black;
+            --white-color: white;
+        }
+        /*como se usa la varible se llama con el var*/
+        .perfil{
+            color: var(--Primary-color);/*color de la fuente*/
+            background-color: var(--white-color);/*color de fondo*/
+            padding: 20px;/*espacio entre el borde y el contenido*/
+            border-radius: 10px;/*esquinas redondeadas*/
+            margin: 20px;/*margen entre los elementos*/
+            h2{
+        color : var(--secondary-color);/*color de la fuente*/
+        font-family: 'Times New Roman', Times, serif;/*fuente del texto*/
+        background: linear-gradient(40deg, rgb(77, 222, 232) 40%, rgb(145, 96, 250) 60%);
+        text-transform: uppercase;/*letra mayuscula*/
+        text-align : center;/*alinear el texto al centro*/
+    }  
+        }
+    
+    </style>
+  </head>
 <body>
   <!--para agregar 3 veces un h1 h2 y h3 una forma abreviada h${hello.$}*3 -->
     <header id="top"><!--EL ID es un atributo unico -->
@@ -73,8 +97,18 @@
             <tr>
               <td>Andres Fernando</td>
               <td>  21 </td>
-              <td>Relaciones Internacionales</td>
+              <td>Relaciones Internacionales</td> 
           </tr>
+          <tr><!--fila-->
+            <td>Marlene</td><!--contenido de la tabla-->
+            <td>  58 </td>
+            <td>Secretariado</td>
+        </tr>
+        <tr><!--fila-->
+          <td>ferchis</td><!--contenido de la tabla-->
+          <td>  47 </td>
+          <td>Operador de quipo</td>
+      </tr>
         </table>
       </section>
 
@@ -89,7 +123,7 @@
 
         <section class="familia">
           <h3>MY FAMILY</h3>
-           <img src="./assets/familia.jpeg"width="200" height="200"="mi familia">
+           <img src="./assets/familia.jpeg"width="150" height="200"="mi familia">
             <p>
                 En mi falilia somos 4 mis padres mi hermano y yo, una familia unida , alegre y de un ambiente genial ,
                 nuestros planes soy el baile  y viajar a conocer partes diversas que nos rodean .
@@ -132,11 +166,9 @@
         <li>se sirve y agrega toque de cilantro para disfrutar</li>
        </ol>
     
-
     </main>
     <!--el ASIDE es contienido secundario-->
     
-
     <hr />
     <!--PONER FORMULARIOS:-->
     <form><!--etiqueta para formularios-->
@@ -147,9 +179,15 @@
       <label>Email:</label><!--etiqueta para el email-->
       <input type="email" />
       <label>Tel:</label>
-      <input type="Tel" /><!--input=para escribir-->
+      <input type="Tel" /><!--  input=para escribir-->
       <label for="message">Mensaje:</label><!--etiqueta para el mensaje-->
-      <textarea id="message" rows="4" cols="50"></textarea><!--textarea=para escribir un mensaje largo-->
+      <!--el placeholder es para mostrar un texto de guia-->
+      <input type="text" id="message" placeholder="Escribe tu mensaje aqui" /><!--input=para escribir-->
+      <br/><br/>
+      <label>
+        Check
+         <input type="checkbox"/>
+     </label>
       <button type="submit">Enviar</button><!--boton para enviar el formulario-->
   </form>
   <hr />
