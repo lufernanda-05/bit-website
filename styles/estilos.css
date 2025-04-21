@@ -3,8 +3,8 @@
 /*----------- FONDO DE LA PAGINA----------------------*/
 
 body {
-    /*color para el fondo degradado*/
-    background: linear-gradient(40deg, rgb(227, 135, 245) 48%, rgb(241, 131, 131) 100%);
+    /*color para el fondo */
+    background:rgb(245, 141, 245)
 }
 /*PARA PONER COLOR A TODO EL TEXTO DE UNO SOLO SE PONE EL COLOR 
 EN EL BODY*//*para poner todos los titulos en un color = agruparlos h1,h2*/
@@ -145,31 +145,39 @@ th, td {
 }
 
 /*--------------------MI FAMILIA---------------------------*/
-
-
+:root {
+    --Primary-color: rgb(6, 0, 16);
+    --secondary-color: black;
+    --white-color: rgb(244, 241, 241);
+}
 .familia{
+    color: var(--Primary-color);/*color de la fuente*/
     text-align: center;/*centra la foto*/
     border-style:groove;/*borde con relieve*/
-    border-color: rgb(227, 27, 190);
-    background-color: rgb(160, 160, 248);
-
+    background-color: var(--white-color);/*color de fondo*/
+    padding: 10px;/*espacio entre el borde y el contenido*/
+    border-radius: 10px;/*esquinas redondeadas*/
+    margin: 20px;/*margen entre los elementos*/
+    border-color: rgb(6, 0, 16);
+    background-color: rgb(243, 122, 122);
     h3{
-        font-family: 'Times New Roman', Times, serif;/*fuente del texto*/
-        background: linear-gradient(40deg, rgb(77, 222, 232) 40%, rgb(145, 96, 250) 60%);
-        color: rgb(233, 237, 237);
-        
-    }
+color : var(--secondary-color);/*color de la fuente*/
+font-family: 'Times New Roman', Times, serif;/*fuente del texto*/
+padding: 10px;
+background: linear-gradient(40deg, rgb(98, 231, 248) 40%, rgb(145, 96, 250) 60%);
+text-transform: uppercase;/*letra mayuscula*/
+text-align : center;/*alinear el texto al centro*/
 }  
+}
 
 /*---------------------------------------------------------------*/
 
 .video{
-    text-align: end;/*centra la foto*/
+    text-align:right;/*centra la foto*/
     h3{
         font-family: 'Times New Roman', Times, serif;/*fuente del texto*/
         background: linear-gradient(40deg, rgb(77, 222, 232) 40%, rgb(145, 96, 250) 60%);
         color: rgb(233, 237, 237);
-        text-align:right;/*centra la foto*/
     }
 }
 
@@ -212,7 +220,6 @@ li{
     text-align: left;
 }
 /*----------------------contacto---------------------*/
-
 textarea{
     border-radius: 10px;/*redondea el textarea*/
     border: 1px solid rgb(88, 224, 248);/*borde del textarea*/
@@ -237,6 +244,7 @@ form{
     text-align: left;/*centra el formulario*/
     margin-top: 20px;/*margen superior del formulario*/
     margin-bottom: 20px;/*margen inferior del formulario*/
+
 }
 input{
     width: 200px;/*ancho del input*/
@@ -245,6 +253,7 @@ input{
     border: 1px solid rgb(88, 224, 248);/*borde del input*/
     background-color: white;/*color de fondo del input*/
     margin-bottom: 10px;/*margen inferior del input*/
+    padding-left: 2cm;
 }
 /*---------------------button---------------------*/
 button{
@@ -261,8 +270,7 @@ button{
 footer{
     text-align: center;/*centra la foto*/
     border-style:groove;/*borde con relieve*/
-    border-color: rgb(227, 27, 190);
-    background-color: rgb(9, 241, 218);
+    border-color: rgb(7, 170, 230);
     text-align: center;
     margin-top: 20px;/*margen superior del footer*/
     margin-bottom: 20px;/*margen inferior del footer*/
