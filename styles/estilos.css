@@ -4,7 +4,7 @@
 
 body {
     /*color para el fondo */
-    background:rgb(245, 141, 245)
+    background : linear-gradient(40deg, rgb(246, 184, 248) 40%, rgb(191, 187, 244) 60%);
 }
 /*PARA PONER COLOR A TODO EL TEXTO DE UNO SOLO SE PONE EL COLOR 
 EN EL BODY*//*para poner todos los titulos en un color = agruparlos h1,h2*/
@@ -22,7 +22,7 @@ h1{
     background: linear-gradient(40deg, rgb(77, 222, 232) 48%, rgb(145, 96, 250) 100%);
     text-align: center;/*centra el texto*/
     font-size: 2.5em;/*tamaño de la fuente*/
-    font-family:'Times New Roman', Times, serif/*fuente del texto*/ 
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
 
 @media screen and (min-width: 576px) {
@@ -67,12 +67,14 @@ h1{
     border-radius: 50%;/*redondea la foto*/
 }
 /*----------------- links redes sociales -----------------*/
-
 .menu {
+    
     margin-top: 20px;/*margen superior del menu*/
     margin-bottom: 20px;/*margen inferior del menu*/
     text-align:left;/*centra el menu*/
     text-transform: uppercase;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;/*fuente del texto*/
     h2{
         font-family: 'Times New Roman', Times, serif;/*fuente del texto*/
         background: linear-gradient(40deg, rgb(77, 222, 232) 40%, rgb(145, 96, 250) 60%);
