@@ -1,0 +1,15 @@
+/**/
+{
+  "compilerOptions": {
+    "target": "es2016",                               
+    "module": "commonjs",                                
+    "esModuleInterop": true,                          
+    "forceConsistentCasingInFileNames": true,            
+    "strict": true,                                    
+    "skipLibCheck": true,
+    "rootDir": "./",/*de donde toma los archivos fuentes=(archivos typescript )*/
+    "outDir": "./"/*archivos de salida */
+  },
+  "include": ["index.ts"],
+  "exclude": ["node_modules"]/*lo que quiero que ignore por que ya esta por defecto*/
+}
