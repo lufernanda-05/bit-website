@@ -34,21 +34,4 @@ poner una foto
 -----------------------------------------
 dirigir a una pagina por link:
 [Link to BIT](https://bitinstitute.co/)
---------------------------------------------
-LISTAS ORDENADAS:
-1. HTML
-2. CSS
-3. JavaScript
-LISTAS DESORDENADAS:
-* Angular
-- React
-+ Vue
-LISTAS ANIDADAS:
-1. Frontend
-    1. HTML
-    2. CSS
-    3. JavaScript
-2. Backend
-    - Node
-    - Express
-    - Mongo
+-------------------------------------------

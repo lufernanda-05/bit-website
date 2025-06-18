@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>javascript</title>
+    <style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  #game {
+    background: white;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #00796b;
+    text-align: center;
+    width: 280px;
+  }
+  input[type="number"] {
+    width: 50px;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10px 0;
+  }
+  button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  button:hover {
+    background-color: #004d40;
+  }
+  #message {
+    margin-top: 15px;
+    font-size: 1.1em;
+    min-height: 24px;
+  }
+</style>
+</head>
+<body>
+<div id="game">
+    <h1>Juego de Adivinanza</h1>
+  <h2>Adivina el número del (1 a 5)</h2>
+    <p>Tienes 2 intentos para adivinar el número secreto.</p>
+    <input id="guessInput" type="number" min="1" max="5" />
+    <br />
+    <button id="guessBtn">Adivinar</button>
+    <p id="message"></p>
+  </div>
+  <script>
+  const secretNumber = 4;
+  let attemptsLeft = 2;
+
+  const guessInput = document.getElementById('guessInput');
+  const guessBtn = document.getElementById('guessBtn');
+  const message = document.getElementById('message');
+
+  guessBtn.addEventListener('click', () => {
+    const guess = Number(guessInput.value);
+
+    if (guess < 1 || guess > 5 || isNaN(guess)) {
+      message.textContent = 'Por favor, ingresa un número válido del 1 al 5.';
+      return;
+    }
+
+    attemptsLeft--;
+
+    if (guess === secretNumber) {
+      message.textContent = `¡Correcto! El número secreto es ${secretNumber}.`;
+      guessBtn.disabled = true;
+      guessInput.disabled = true;
+    } else if (attemptsLeft > 0) {
+      message.textContent = `Incorrecto. Te quedan ${attemptsLeft} intento(s).`;
+    } else {
+      message.textContent = `Lo siento, no adivinaste. El número secreto era ${secretNumber}.`;
+      guessBtn.disabled = true;
+      guessInput.disabled = true;
+    }
+
+    guessInput.value = '';
+    guessInput.focus();
+  });
+</script>
+
+    <!--primero la carpeta y despues el archivo-->
+<script src="./js/script.js"></script>
+</body>
+</html>
